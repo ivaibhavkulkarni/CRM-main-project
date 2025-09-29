@@ -138,8 +138,43 @@ const LandingPage = () => {
           </div>
         </div>
 
+        
+{/* Testimonials Section */}
+<section id="testimonials" className="bg-gray-50 w-full py-12 md:py-16 px-4">
+  <div className="container mx-auto text-center">
+    <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-8">What Our Users Say</h2>
+    <p className="text-slate-600 max-w-2xl mx-auto mb-6">
+      Hola IO CRM helped me save 2 hours daily managing repairs!
+    </p>
+    <p className="text-slate-600 max-w-2xl mx-auto">
+      "Our inventory and billing process became effortless with Hola IO." — John, Shop Owner
+    </p>
+  </div>
+</section>
+
+{/* FAQ Section */}
+<section id="faq" className="bg-white w-full py-12 md:py-16 px-4">
+  <div className="container mx-auto max-w-2xl">
+    <h2 className="text-2xl md:text-3xl text-slate-900 font-semibold mb-6 text-center">Frequently Asked Questions</h2>
+    <div className="space-y-4">
+      <details className="p-4 border rounded-lg">
+        <summary className="font-medium cursor-pointer">Can I manage multiple repair shops in Hola IO?</summary>
+        <p className="mt-2 text-slate-600">Yes, our CRM supports multiple locations and shops under a single account.</p>
+      </details>
+      <details className="p-4 border rounded-lg">
+        <summary className="font-medium cursor-pointer">Does Hola IO handle invoicing and payments?</summary>
+        <p className="mt-2 text-slate-600">Absolutely! You can create invoices, track payments, and send them directly to customers.</p>
+      </details>
+      <details className="p-4 border rounded-lg">
+        <summary className="font-medium cursor-pointer">Is there a mobile app for technicians?</summary>
+        <p className="mt-2 text-slate-600">Yes, our mobile app allows technicians to update repair status in real-time.</p>
+      </details>
+    </div>
+  </div>
+</section>
+        
         {/* CTA Section */}
-        <div className="relative z-10 py-12 md:py-20 px-4 bg-white">
+        <div className="relative z-10 py-12 md:py-20 px-4 bg-gray-50">
           <div className="container mx-auto text-center">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-medium mb-4 text-slate-900">
               Ready to Transform Your Repair Business?
