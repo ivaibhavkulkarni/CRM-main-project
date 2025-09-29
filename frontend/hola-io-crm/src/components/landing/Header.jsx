@@ -54,7 +54,7 @@ const Header = () => {
             ) : (
               <>
                 <Link to="/login" className="text-gray-800 hover:text-gray-900 font-medium">Login</Link>
-                <Link to="/signup" className="bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-cyan-100 hover:text-slate-900 transition">Login / Signup</Link>
+                <Link to="/signup" className="bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-cyan-100 hover:text-slate-900 transition">Signup</Link>
               </>
             )}
           </div>
@@ -83,7 +83,7 @@ const Header = () => {
             ) : (
               <>
                 <Link to="/login" className="block px-4 py-3 text-gray-700 hover:bg-gray-50 w-full text-center">Login</Link>
-                <Link to="/signup" className="block w-full text-center bg-gradient-to-r from-cyan-700 to-emerald-600 text-white px-4 py-3 rounded-full">Login / Signup</Link>
+                <Link to="/signup" className="bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-cyan-100 hover:text-slate-900 transition">Signup</Link>
               </>
             )}
           </div>
