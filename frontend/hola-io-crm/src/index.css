@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-@theme {
-  --font-display: "Urbanist", "sans-serif";
-  --color-primary: #6bd700;
-  --breakpoint-3xl: 1920px;
-}
+@tailwind utilities;
 
-/* Base layer */
 @layer base {
   html {
-    font-family: var(--font-display);
+    font-family: "Urbanist", sans-serif;
   }
 
   body {
@@ -22,16 +17,20 @@
   }
 }
 
-/* Animation */
+/* 🔥 Gradient Shine Animation */
 @keyframes text-shine {
   0% {
     background-position: 0% 50%;
   }
-  100% {
+  50% {
     background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
 .animate-text-shine {
-  animation: text-shine 3s ease-in-out infinite;
+  background-size: 200% auto;
+  animation: text-shine 3s linear infinite;
 }

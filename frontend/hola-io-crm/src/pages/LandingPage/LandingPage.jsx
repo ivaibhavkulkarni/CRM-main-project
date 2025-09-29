@@ -26,9 +26,10 @@ const LandingPage = () => {
                 </Badge>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl mb-6 font-medium text-slate-900 leading-tight">
                   Streamline Your <br />
-                  <span className="text-transparent bg-clip-text bg-[radial-gradient(circle,from-cyan-700,via-emerald-500,to-cyan-600)] bg-[length:200%_200%] animate-text-shine font-semibold">
-                    Mobile Repair Business
-                  </span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-emerald-500 to-cyan-700 bg-[length:200%_200%] animate-text-shine font-semibold">
+  Mobile Repair Business
+</span>
+
                 </h1>
               </div>
 

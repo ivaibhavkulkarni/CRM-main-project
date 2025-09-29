@@ -89,7 +89,7 @@ const Header = () => {
             </Link>
             <Link
               to="/signup"
-              className="bg-gradient-to-r from-cyan-700 to-emerald-600 text-white px-5 py-2.5 rounded-full font-semibold hover:scale-105 hover:shadow-md border border-cyan-300 transition-all duration-200"
+              className="bg-slate-900 text-xs md:text-sm font-semibold text-white px-6 md:px-7 py-2 md:py-2.5 rounded-full hover:bg-cyan-100 hover:text-slate-900 border border-cyan-50 hover:border-cyan-300 transition-colors cursor-pointer"
             >
               Login / Signup
             </Link>
