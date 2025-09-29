@@ -1,3 +1,4 @@
+// frontend/hola-io-crm/src/pages/LandingPage/LandingPage.jsx (fixed)
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/Button";
@@ -5,19 +6,16 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/Ca
 import { Badge } from "@/components/ui/Badge";
 import { CheckCircle, Smartphone, Users, Wrench, BarChart3, Shield, Zap } from "lucide-react";
 import Header from "../../components/landing/Header";
-
 const LandingPage = () => {
   return (
     <>
-      <div className="w-full min-h-full bg-gray-50">
-        {/* Blur background effect */}
-        <div className="w-[500px] h-[500px] bg-cyan-200/20 blur-[65px] absolute top-0 left-0 z-0"></div>
-
+      <div className="relative overflow-hidden w-full min-h-screen bg-gray-50">
+        {/* Blur background effect - made responsive to prevent overflow */}
+        <div className="w-[min(500px,100vw)] h-[500px] bg-cyan-200/20 blur-[65px] absolute top-0 left-0 z-0"></div>
         {/* Use existing Header */}
         <Header />
-
         {/* Hero Section */}
-        <div className="relative z-10 py-12 md:py-20 px-4 h-[100vh] flex items-center">
+        <div className="relative z-10 py-12 md:py-20 px-4 min-h-screen flex items-center">
           <div className="container mx-auto">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
               <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -29,10 +27,8 @@ const LandingPage = () => {
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-emerald-500 to-cyan-700 bg-[length:200%_200%] animate-text-shine font-semibold">
   Mobile Repair Business
 </span>
-
                 </h1>
               </div>
-
               <div className="w-full lg:w-1/2">
                 <p className="text-base md:text-[17px] text-slate-600 mb-6 text-center lg:text-left max-w-lg mx-auto lg:mx-0">
                   Complete CRM solution designed specifically for mobile repair shops. Manage customers, track repairs,
@@ -49,9 +45,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-
         {/* Features Section */}
-        <section className="bg-white w-full py-12 md:py-16 px-4">
+        <section id="features" className="bg-white w-full py-12 md:py-16 px-4">
           <div className="container mx-auto">
             <h2 className="text-2xl md:text-3xl text-center font-semibold text-slate-900 mb-4">
               Features That Help You Grow
@@ -59,7 +54,6 @@ const LandingPage = () => {
             <p className="text-center text-slate-600 mb-8 md:mb-12 max-w-2xl mx-auto text-sm md:text-base">
               From customer management to repair tracking, Hola IO CRM has all the tools your repair business needs.
             </p>
-
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {[
                 {
@@ -111,7 +105,6 @@ const LandingPage = () => {
             </div>
           </div>
         </section>
-
         {/* Benefits Section */}
         <div className="relative z-10 py-12 md:py-20 px-4 bg-gradient-to-br from-slate-900 to-cyan-950 text-white">
           <div className="container mx-auto">
@@ -121,7 +114,6 @@ const LandingPage = () => {
                 Built specifically for mobile repair businesses with features that matter most to your success.
               </p>
             </div>
-
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {[
                 "Increase efficiency by 40%",
@@ -137,10 +129,9 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-
-        
+       
 {/* Testimonials Section */}
-<section id="testimonials" className="bg-gray-50 w-full py-12 md:py-16 px-4">
+<section id="testimonials" className="bg-gray-50 w-full py-12 md:py-16 px-4 h-[100vh] flex items-center">
   <div className="container mx-auto text-center">
     <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-8">What Our Users Say</h2>
     <p className="text-slate-600 max-w-2xl mx-auto mb-6">
@@ -151,9 +142,8 @@ const LandingPage = () => {
     </p>
   </div>
 </section>
-
 {/* FAQ Section */}
-<section id="faq" className="bg-white w-full py-12 md:py-16 px-4">
+<section id="faq" className="bg-white w-full py-12 md:py-16 px-4 h-[100vh] flex items-center">
   <div className="container mx-auto max-w-2xl">
     <h2 className="text-2xl md:text-3xl text-slate-900 font-semibold mb-6 text-center">Frequently Asked Questions</h2>
     <div className="space-y-4">
@@ -172,7 +162,7 @@ const LandingPage = () => {
     </div>
   </div>
 </section>
-        
+       
         {/* CTA Section */}
         <div className="relative z-10 py-12 md:py-20 px-4 bg-gray-50">
           <div className="container mx-auto text-center">
@@ -190,7 +180,6 @@ const LandingPage = () => {
             </Link>
           </div>
         </div>
-
         {/* Footer */}
         <footer className="bg-slate-900 text-white py-8 md:py-12 px-4">
           <div className="container mx-auto">
@@ -202,9 +191,7 @@ const LandingPage = () => {
                   grow with ease.
                 </p>
               </div>
-
               <div className="hidden md:block"></div>
-
               <div>
                 <h4 className="text-sm md:text-base font-semibold text-white mb-4">Connect With Us</h4>
                 <div className="flex justify-center md:justify-start space-x-6 mb-4">
@@ -252,5 +239,4 @@ const LandingPage = () => {
     </>
   );
 };
-
 export default LandingPage;
